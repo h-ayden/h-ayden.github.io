@@ -22,6 +22,10 @@
   font-family: 'Formula1-Regular';
 }
 
+body {
+  background-color: rgb(31, 31, 38);
+}
+
 /* -------------------------------------------------- Navbar CSS */
 .navbar {
   background: rgb(233, 51, 35);
