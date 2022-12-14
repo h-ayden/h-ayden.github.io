@@ -112,7 +112,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-    height: 30vh;
+    height: 15rem;
     z-index: -1;
   }
 
@@ -123,7 +123,7 @@
     pointer-events: all;
     transition: all 0.3s ease;
     z-index: 99;
-    height: 30vh;
+    height: 15rem;
     font-size: 1.2rem;
   }
 
