@@ -462,6 +462,10 @@ body {
   .services__card {
     width: 300px;
   }
+  .services__container h2 {
+    margin-top: -1rem;
+  } 
+  
 }
 
 /* -------------------------------------------------- Footer CSS */
