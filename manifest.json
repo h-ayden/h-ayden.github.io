@@ -1,0 +1,11 @@
+{
+  "name": "Mini Bike Racing",
+  "short_name": "MBR",
+  "start_url": "https://h-ayden.github.io",
+  "display": "standalone",
+  "icons": [{
+    "src": "images/webappLogo001.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

@@ -1,29 +1,33 @@
 @font-face {
-  font-family: 'Formula1-Regular';
-  src: url('fonts/Formula1-Regular.ttf');
+  font-family: "Formula1-Regular";
+  src: url("fonts/Formula1-Regular.ttf");
 }
 @font-face {
-  font-family: 'Formula1-Bold';
-  src: url('fonts/Formula1-Bold.ttf');
+  font-family: "Formula1-Bold";
+  src: url("fonts/Formula1-Bold.ttf");
 }
 @font-face {
-  font-family: 'Formula1-Black';
-  src: url('fonts/Formula1-Black.ttf');
+  font-family: "Formula1-Black";
+  src: url("fonts/Formula1-Black.ttf");
 }
 @font-face {
-  font-family: 'Formula1-Wide';
-  src: url('fonts/Formula1-Wide.ttf');
+  font-family: "Formula1-Wide";
+  src: url("fonts/Formula1-Wide.ttf");
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Formula1-Regular';
+  font-family: "Formula1-Regular";
 }
 
 body {
   background-color: rgb(31, 31, 38);
+}
+
+h1 {
+  font-family: "Formula1-Black";
 }
 
 /* -------------------------------------------------- Navbar CSS */
@@ -79,7 +83,7 @@ body {
 }
 
 .navbar__links {
-  font-family: 'Formula1-Bold';
+  font-family: "Formula1-Bold";
   color: white;
   display: flex;
   align-items: center;
@@ -190,7 +194,9 @@ body {
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 90vh;
+  height: 100%;
+  /* height: 90vh; */
+  margin-top: 10vh;
   background-color: rgb(31, 31, 38);
   z-index: 1;
   width: 100%;
@@ -206,6 +212,7 @@ body {
 
 .main__content h1 {
   font-size: 4rem;
+  font-family: "Formula1-Black";
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
@@ -217,6 +224,7 @@ body {
 
 .main__content h2 {
   font-size: 4rem;
+  font-family: "Formula1-Wide";
   margin-top: 10px;
   background-color: #ff8177;
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
@@ -256,7 +264,7 @@ body {
 
 .main__btn:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 0;
@@ -292,7 +300,7 @@ body {
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: 100%;
   }
 
   .main__content {
@@ -343,7 +351,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .services h1 {
@@ -362,7 +370,9 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
+  margin: 10vh 2.5vw;
+  /* margin-top: 10vh;
+  margin-bottom: 5rem; */
   font-size: 2.5rem;
   text-align: center;
 }
@@ -383,7 +393,7 @@ body {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url('images/File13.jpg');
+    url("images/File13.jpg");
   background-size: cover;
   position: relative;
   color: white;
@@ -401,7 +411,7 @@ body {
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.9) 100%
     ),
-    url('images/File14.jpg');
+    url("images/File14.jpg");
 }
 
 .services__card h2 {
@@ -440,20 +450,20 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .services {
+  /* .services {
     height: 1600px;
-  }
+  } */
 
   .services h1 {
     font-size: 2rem;
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .services {
+  /* .services {
     height: 1400px;
-  }
+  } */
 
   .services h1 {
     font-size: 1.2rem;
@@ -464,8 +474,97 @@ body {
   }
   .services__container h2 {
     margin-top: -1rem;
-  } 
-  
+  }
+}
+
+/* -------------------------------------------------- Socials Section */
+.socials {
+  background: rgb(31, 31, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.socials h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin: 10vh 2.5vw;
+  /* margin-top: 10vh;
+  margin-bottom: 5rem; */
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.socials__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socials__card {
+  text-align: center;
+  margin: 1rem;
+  height: 100%;
+  width: 85vw;
+  border-radius: 4px;
+  position: relative;
+}
+
+.socials__card h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.socials__card p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  /* .socials {
+    height: 1600px;
+  } */
+
+  .socials h1 {
+    font-size: 2rem;
+    /* margin-top: 12rem; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .socials {
+    height: 50vh;
+  } */
+
+  .socials h1 {
+    font-size: 1.2rem;
+  }
+
+  .socials__card {
+    width: 90vw;
+  }
+}
+
+iframe {
+  margin: 1vh 0.5vw;
+  border-radius: 4px;
 }
 
 /* -------------------------------------------------- Footer CSS */
