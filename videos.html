@@ -14,6 +14,11 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <style type="text/css">
+      .d-none {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar Section -->
@@ -57,34 +62,71 @@
         </div>
       </div>
     </div>
+    <!-- <div class="dropdown">
+      <div class="caret"></div>
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> -->
+
+    <!-- <select id="year" onchange="enableBrand(this)">
+      <option value="22" selected>Option 1</option>
+      <option value="23">Option 2</option>
+    </select>
+    <select id="tv" class="d-none">
+      <option value="24">Option 1</option>
+      <option value="25">Option 2</option>
+    </select> -->
+
+    <!--Size dropdown menu-->
+    <select id="size_select">
+      <option value="option1">Kids</option>
+      <option value="option2">Youth</option>
+      <option value="option3">XS</option>
+      <option value="option4">Small</option>
+      <option value="option5">Medium</option>
+      <option value="option6">Large</option>
+    </select>
+
+    <!--Size dropdown content-->
+    <div id="option1" class="size_chart">Kids</div>
+    <div id="option2" class="size_chart">Youth</div>
+    <div id="option3" class="size_chart">XS</div>
+    <div id="option4" class="size_chart">Small</div>
+    <div id="option5" class="size_chart">Medium</div>
+    <div id="option6" class="size_chart">Large</div>
+
     <div class="wrapper">
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
@@ -92,35 +134,60 @@
     <div class="wrapper">
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
       <div class="item">
         <iframe
-          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
           frameborder="0"
         ></iframe>
       </div>
     </div>
     <script src="app.js"></script>
+    <script src="videos.js"></script>
+    <script type="text/javascript">
+      // function enableBrand(answer) {
+      //   if (answer.value == 22) {
+      //     document.getElementById("tv").classList.remove("d-none");
+      //   } else {
+      //     document.getElementById("tv").classList.add("d-none");
+      //   }
+      // }
+      $(document).ready(function () {
+        //hides dropdown content
+        $(".size_chart").hide();
+
+        //unhides first option content
+        $("#option1").show();
+
+        //listen to dropdown for change
+        $("#size_select").change(function () {
+          //rehide content on change
+          $(".size_chart").hide();
+          //unhides current item
+          $("#" + $(this).val()).show();
+        });
+      });
+    </script>
   </body>
 </html>

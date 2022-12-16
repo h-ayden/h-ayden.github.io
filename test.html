@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery Show Hide Elements Using Select Box</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select")
+          .change(function () {
+            $(this)
+              .find("option:selected")
+              .each(function () {
+                var optionValue = $(this).attr("value");
+                if (optionValue) {
+                  $(".videos")
+                    .not("." + optionValue)
+                    .hide();
+                  $("." + optionValue).show();
+                } else {
+                  $(".videos").hide();
+                }
+              });
+          })
+          .change();
+      });
+    </script>
+  </head>
+  <body>
+    <div w3-include-html="nav.html"></div>
+    <div>
+      <select>
+        <option value="2022" selected>Red</option>
+        <option value="2023">Green</option>
+        <!-- <option value="blue">Blue</option> -->
+      </select>
+    </div>
+    <div class="2022 videos">
+      You have selected <strong>red option</strong> so i am here
+    </div>
+    <div class="2023 videos">
+      You have selected <strong>green option</strong> so i am here
+    </div>
+    <!-- <div class="blue box">
+      You have selected <strong>blue option</strong> so i am here
+    </div> -->
+  </body>
+  <script src="include.js"></script>
+  <script>
+    includeHTML();
+  </script>
+</html>
