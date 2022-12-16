@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="rgb(233, 51, 35)" />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.001.ico">
     <title>Mini Bike Racing</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -30,7 +31,7 @@
             <a href="/" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">Videos</a>
+            <a href="/videos.html" class="navbar__links">Videos</a>
           </li>
           <li class="navbar__item">
             <a href="/" class="navbar__links">Standings</a>
@@ -39,7 +40,7 @@
             <a href="/" class="navbar__links">Results</a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links">Regulations</a>
+            <a href="/" class="navbar__links">Drivers & Teams</a>
           </li>
         </ul>
       </div>
@@ -67,17 +68,17 @@
         <div class="services__card">
           <h2>Experience the Thrill</h2>
           <p>High-intensity racing</p>
-          <button>Watch Races</button>
+          <button onclick="location.href='/videos.html'">Watch Races</button>
         </div>
         <div class="services__card">
           <h2>Who's Got the Lead?</h2>
-          <p>Razor-thin margins</p>
+          <p>Consistency Is Key</p>
           <button>Check Standings</button>
         </div>
         <div class="services__card">
-          <h2>Who's Got the Lead?</h2>
+          <h2>We Have a Winner!</h2>
           <p>Razor-thin margins</p>
-          <button>Check Standings</button>
+          <button>See Results</button>
         </div>
       </div>
     </div>
@@ -87,18 +88,19 @@
       <h1>Keep up with the latest news</h1>
       <div class="social__container">
         <div class="socials__card">
+          <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0" frameBorder="0"></iframe>
+          <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0" frameBorder="0"></iframe>
+          <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0" frameBorder="0"></iframe>
+        </div>
+        <div class="socials__card">
           <figure data-behold-id="Xzd3lpAfRhgJhJ6lMjYd"></figure>
           <script src="https://w.behold.so/widget.js" type="module"></script>
         </div>
-      </div>
-
-      <div class="social__container">
         <div class="socials__card">
-          <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ" frameBorder="0"></iframe>
-          <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2" frameBorder="0"></iframe>
-          <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3" frameBorder="0"></iframe>
+          <a class="twitter-timeline" data-width="100vw" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/SpruceRacing?ref_src=twsrc%5Etfw">Tweets by SpruceRacing</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-    </div>
+      </div>
 
     <!-- Footer Section -->
     <div class="footer__container">
@@ -106,13 +108,13 @@
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About</h2>
-            <a href="/">Drivers</a> <a href="/">Teams</a>
-            <a href="/">Standings</a> <a href="/">Results</a>
+            <a href="/">Drivers & Teams</a> <a href="/">Standings</a>
+            <a href="/">Results</a> <a href="/">Regulations</a>
           </div>
           <div class="footer__link--items">
             <h2>Videos</h2>
-            <a href="/">Playlist</a> <a href="/">Races</a>
-            <a href="/">Practice</a> <a href="/">Highlights</a>
+            <a href="/videos.html">Playlist</a> <a href="/videos.html">Races</a>
+            <a href="/videos.html">Practice</a> <a href="/videos.html">Highlights</a>
           </div>
         </div>
         <div class="footer__link--wrapper">
@@ -123,8 +125,8 @@
           </div>
           <div class="footer__link--items">
             <h2>Socials</h2>
-            <a href="/">Website</a> <a href="/">Instagram</a>
-            <a href="/">Youtube</a> <a href="/">Twitter</a>
+            <a href="/">Website</a> <a href="https://instagram.com/spruceracing?igshid=YmMyMTA2M2Y=">Instagram</a>
+            <a href="https://youtube.com/@sprucembr">Youtube</a> <a href="https://twitter.com/SpruceRacing?s=20&t=qeqcT5vOuWGnWf9o6OE4_g">Twitter</a>
           </div>
         </div>
       </div>
@@ -135,7 +137,7 @@
               ><img src="images/sraFooter.PNG" style="height: 32px"
             /></a>
           </div>
-          <p class="website__rights">© SRA 2023. All rights reserved V0.102</p>
+          <p class="website__rights">© SRA 2023. All rights reserved V0.103</p>
           <div class="social__icons">
             <a
               class="social__icon--link"
