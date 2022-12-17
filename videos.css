@@ -20,3 +20,37 @@
   text-align: center;
   /* background-color: #ddd; */
 }
+
+.collapsible {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 5vh;
+}
+.collapsible-content {
+  display: none;
+}
+
+.s22-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+}
+
+.round h1 {
+  font-family: Formula1-Bold;
+  color: white;
+  margin-left: 5vw;
+}
+
+.round p {
+  font-family: Formula1-Regular;
+  color: white;
+  margin-left: 5vw;
+}

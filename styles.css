@@ -577,6 +577,10 @@ iframe {
   margin: 1vh 0.5vw;
   border-radius: 4px;
   aspect-ratio: 16/9;
+  /* width: 20rem; */
+}
+
+.preview {
   width: 20rem;
 }
 

@@ -48,29 +48,45 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Main Section -->
     <div class="main">
       <div class="main__container">
         <div class="main__content">
-          <h1>TECH SECTION</h1>
+          <h1>Mini Bike TV</h1>
           <p>Check out our technologies</p>
-          <button class="main__btn"><a href="#">Get Started</a></button>
+          <!-- <button class="main__btn"><a href="#">Get Started</a></button> -->
         </div>
-        <div class="main__img-container">
+        <!-- <div class="main__img-container">
           <img id="main__img" src="images/pic2.jpg" />
-        </div>
+        </div> -->
       </div>
     </div>
 
     <!-- Selections Section -->
     <div>
-      <select>
+      <select class="collapsible main__btn">
         <option value="2022" selected>2022</option>
         <option value="2023">2023</option>
       </select>
     </div>
 
+    <!-- Main Videos -->
+    <div class="round main">
+      <h1>Chorney Field Grand Prix</h1>
+      <p>Round 1</p>
+      <iframe
+        class="s22-main 2022 videos"
+        src="https://www.youtube.com/embed/0qDiYOo2gbA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
     <!-- Videos Section -->
-    <div class="wrapper 2022 videos">
+    <!-- <div class="wrapper 2022 videos">
       <div class="item">
         <iframe
           src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
@@ -134,8 +150,50 @@
           frameborder="0"
         ></iframe>
       </div>
+    </div> -->
+
+    <!-- Alternate Angles -->
+    <button class="collapsible main__btn 2022 videos">
+      <a>Alternate Angles</a>
+    </button>
+    <div class="collapsible-content">
+      <div class="wrapper 2022 videos">
+        <div class="item">
+          <iframe
+            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="item">
+          <iframe
+            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="item">
+          <iframe
+            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="item">
+          <iframe
+            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="item">
+          <iframe
+            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=6&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
     </div>
 
+    <div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="videos.js"></script>
