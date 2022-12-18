@@ -1,0 +1,30 @@
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="rgb(233, 51, 35)" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="preload.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $.get("header.html", function (data) {
+            $("#header").replaceWith(data);
+        });
+        $.get("footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+    <script>
+        $(document.body).addClass("preload");
+    </script>
+</head>
+
+<body>
+    <div class="loader-wrapper"><!-- <span class="loader"><span class="loader-inner"></span></span> --></div>
+
+    <script src="preload.js"></script>
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,243 @@
+/* -------------------------------------------------- Services Section */
+.services {
+  background: rgb(31, 31, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.services h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin: 10vh 2.5vw;
+  /* margin-top: 10vh;
+    margin-bottom: 5rem; */
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.services__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services__card {
+  margin: 1rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/File13.jpg");
+  background-size: cover;
+  position: relative;
+  color: white;
+  transform: scale(1);
+  transition: 0.2s ease-out;
+}
+
+.services__card:before {
+  opacity: 0.2;
+}
+
+.services__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url("images/File14.jpg");
+}
+
+.services__card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url("images/File16.jpg");
+}
+
+.services__card h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.services__card p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+.services__card button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  position: absolute;
+  top: 440px;
+  left: 30px;
+  font-size: 1rem;
+}
+
+.services__card button:hover {
+  cursor: pointer;
+}
+
+.services__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------- Mobile Responsive */
+@media screen and (max-width: 960px) {
+  /* .services {
+      height: 1600px;
+    } */
+
+  .services h1 {
+    font-size: 2rem;
+    /* margin-top: 12rem; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .services {
+      height: 1400px;
+    } */
+
+  .services h1 {
+    font-size: 1.2rem;
+  }
+
+  .services__card {
+    width: 300px;
+  }
+  .services__container h2 {
+    margin-top: -1rem;
+  }
+}
+
+/* -------------------------------------------------- Socials Section */
+.socials {
+  background: rgb(31, 31, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.socials h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin: 10vh 2.5vw 5vh;
+  /* margin-top: 10vh;
+    margin-bottom: 5rem; */
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.socials__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socials__card {
+  text-align: center;
+  margin: 2.5rem 1rem;
+  height: 100%;
+  width: 85vw;
+  border-radius: 4px;
+  position: relative;
+}
+
+.socials__card h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.socials__card p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  /* .socials {
+      height: 1600px;
+    } */
+
+  .socials h1 {
+    font-size: 2rem;
+    /* margin-top: 12rem; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .socials {
+      height: 50vh;
+    } */
+
+  .socials h1 {
+    font-size: 1.2rem;
+  }
+
+  .socials__card {
+    width: 90vw;
+  }
+}
+
+iframe {
+  margin: 1vh 0.5vw;
+  border-radius: 4px;
+  aspect-ratio: 16/9;
+  /* width: 20rem; */
+}
+
+.preview {
+  width: 20rem;
+}
+
+.twitter-timeline {
+  display: flex;
+  justify-content: center;
+}

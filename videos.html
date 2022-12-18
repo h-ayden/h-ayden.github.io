@@ -1,92 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="rgb(233, 51, 35)" />
 
-    <link rel="manifest" href="/manifest.json" />
+<head>
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.001.ico?" />
 
-    <title>Videos - MBR</title>
+  <!-- Head -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $.get("head.html", function (data) {
+      $("#head").replaceWith(data);
+    });
+  </script>
+  <div id="head"></div>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="videos.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"
-          ><img src="images/mbrBanner.PNG" style="height: 32px"
-        /></a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/videos.html" class="navbar__links">Videos</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Standings</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Results</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Drivers & Teams</a>
-          </li>
-        </ul>
+  <!-- Styles -->
+  <link rel="stylesheet" href="videos.css" />
+
+  <title>Videos - MBR</title>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <div id="header"></div>
+
+  <!-- Main Section -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Mini Bike TV</h1>
+        <p>Check out our technologies</p>
+        <!-- <button class="main__btn"><a href="#">Get Started</a></button> -->
       </div>
-    </nav>
-
-    <!-- Main Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Mini Bike TV</h1>
-          <p>Check out our technologies</p>
-          <!-- <button class="main__btn"><a href="#">Get Started</a></button> -->
-        </div>
-        <!-- <div class="main__img-container">
+      <!-- <div class="main__img-container">
           <img id="main__img" src="images/pic2.jpg" />
         </div> -->
-      </div>
     </div>
+  </div>
 
-    <!-- Selections Section -->
-    <div>
-      <select class="collapsible main__btn">
-        <option value="2022" selected>2022</option>
-        <option value="2023">2023</option>
-      </select>
-    </div>
+  <!-- Selections Section -->
+  <div>
+    <select class="collapsible main__btn">
+      <option value="2022" selected>2022</option>
+      <option value="2023">2023</option>
+    </select>
+  </div>
 
-    <!-- Main Videos -->
-    <div class="round main">
-      <h1>Chorney Field Grand Prix</h1>
-      <p>Round 1</p>
-      <iframe
-        class="s22-main 2022 videos"
-        src="https://www.youtube.com/embed/0qDiYOo2gbA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
+  <!-- Main Videos -->
+  <div class="round main">
+    <h1>Chorney Field Grand Prix</h1>
+    <p>Round 1</p>
+    <iframe class="s22-main 2022 videos" src="https://www.youtube.com/embed/0qDiYOo2gbA" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 
-    <!-- Videos Section -->
-    <!-- <div class="wrapper 2022 videos">
+  <!-- Videos Section -->
+  <!-- <div class="wrapper 2022 videos">
       <div class="item">
         <iframe
           src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
@@ -152,50 +123,49 @@
       </div>
     </div> -->
 
-    <!-- Alternate Angles -->
-    <button class="collapsible main__btn 2022 videos">
-      <a>Alternate Angles</a>
-    </button>
-    <div class="collapsible-content">
-      <div class="wrapper 2022 videos">
-        <div class="item">
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="item">
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="item">
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="item">
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="item">
-          <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=6&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
-            frameborder="0"
-          ></iframe>
-        </div>
+  <!-- Alternate Angles -->
+  <button class="collapsible main__btn 2022 videos">
+    <a>Alternate Angles</a>
+  </button>
+  <div class="collapsible-content">
+    <div class="wrapper 2022 videos">
+      <div class="item">
+        <iframe
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+          frameborder="0"></iframe>
+      </div>
+      <div class="item">
+        <iframe
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+          frameborder="0"></iframe>
+      </div>
+      <div class="item">
+        <iframe
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=4&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+          frameborder="0"></iframe>
+      </div>
+      <div class="item">
+        <iframe
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=5&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+          frameborder="0"></iframe>
+      </div>
+      <div class="item">
+        <iframe
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=6&autoplay=0&mute=1&modestbranding=1&rel=0&controls=0"
+          frameborder="0"></iframe>
       </div>
     </div>
+  </div>
 
-    <div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="videos.js"></script>
-  </body>
+  <div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </div>
+
+  <!-- Footer Section -->
+  <div id="footer"></div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  <script src="videos.js"></script>
+</body>
+
 </html>

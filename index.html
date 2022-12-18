@@ -1,195 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="rgb(233, 51, 35)" />
 
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.001.ico?">
+<head>
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.001.ico?" />
 
-    <title>Mini Bike Racing</title>
+  <!-- Head -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $.get("head.html", function (data) {
+      $("#head").replaceWith(data);
+    });
+  </script>
+  <div id="head"></div>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"
-          ><img src="images/mbrBanner.PNG" style="height: 32px"
-        /></a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/videos.html" class="navbar__links">Videos</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Standings</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Results</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Drivers & Teams</a>
-          </li>
-        </ul>
+  <!-- Style -->
+  <link rel="stylesheet" href="index.css" />
+
+  <title>Mini Bike Racing</title>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>MINI BIKE</h1>
+        <h2>RACING</h2>
+        <p>See what makes the difference</p>
+        <button class="main__btn"><a href="#">Drivers & Teams</a></button>
       </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>MINI BIKE</h1>
-          <h2>RACING</h2>
-          <p>See what makes the difference</p>
-          <button class="main__btn"><a href="#">Drivers & Teams</a></button>
-        </div>
-        <div class="main__img--container">
-          <img id="main__img" src="images/Layer 0.png" />
-        </div>
+      <div class="main__img--container">
+        <img id="main__img" src="images/Layer 0.png" />
       </div>
     </div>
+  </div>
 
-    <!-- Services Section -->
-    <div class="services">
-      <h1>Find out what the hype is about</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Experience the Thrill</h2>
-          <p>High-intensity racing</p>
-          <button onclick="location.href='/videos.html'">Watch Races</button>
-        </div>
-        <div class="services__card">
-          <h2>Who's Got the Lead?</h2>
-          <p>Consistency Is Key</p>
-          <button>Check Standings</button>
-        </div>
-        <div class="services__card">
-          <h2>We Have a Winner!</h2>
-          <p>Razor-thin margins</p>
-          <button>See Results</button>
-        </div>
+  <!-- Services Section -->
+  <div class="services">
+    <h1>Find out what the hype is about</h1>
+    <div class="services__container">
+      <div class="services__card">
+        <h2>Experience the Thrill</h2>
+        <p>High-intensity racing</p>
+        <button onclick="location.href='/videos.html'">Watch Races</button>
+      </div>
+      <div class="services__card">
+        <h2>Who's Got the Lead?</h2>
+        <p>Consistency Is Key</p>
+        <button>Check Standings</button>
+      </div>
+      <div class="services__card">
+        <h2>We Have a Winner!</h2>
+        <p>Razor-thin margins</p>
+        <button>See Results</button>
       </div>
     </div>
+  </div>
 
-    <!-- Social Section -->
-    <div class="socials">
-      <h1>Keep up with the latest news</h1>
-      <div class="social__container">
-        <div class="socials__card">
-          <iframe
-            class="preview"
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
-            frameBorder="0"
-            ></iframe>
-          <iframe
-            class="preview"
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
-            frameBorder="0"
-          ></iframe>
-          <iframe
-            class="preview"
-            src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
-            frameBorder="0"
-          ></iframe>
-        </div>
-        <div class="socials__card">
-          <figure data-behold-id="Xzd3lpAfRhgJhJ6lMjYd"></figure>
-          <script src="https://w.behold.so/widget.js" type="module"></script>
-        </div>
-        <div class="socials__card">
-          <a class="twitter-timeline" data-width="100vw" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/SpruceRacing?ref_src=twsrc%5Etfw">Tweets by SpruceRacing</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+  <!-- Social Section -->
+  <div class="socials">
+    <h1>Keep up with the latest news</h1>
+    <div class="social__container">
+      <div class="socials__card">
+        <iframe class="preview"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          frameBorder="0"></iframe>
+        <iframe class="preview"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=2&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          frameBorder="0"></iframe>
+        <iframe class="preview"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7q4B9eYAi0Mel7xm62YcnQ&index=3&autoplay=1&mute=1&modestbranding=1&rel=0&controls=0"
+          frameBorder="0"></iframe>
       </div>
+      <div class="socials__card">
+        <figure data-behold-id="Xzd3lpAfRhgJhJ6lMjYd"></figure>
+        <script src="https://w.behold.so/widget.js" type="module"></script>
+      </div>
+      <div class="socials__card">
+        <a class="twitter-timeline" data-width="100vw" data-height="500" data-dnt="true" data-theme="dark"
+          href="https://twitter.com/SpruceRacing?ref_src=twsrc%5Etfw">Tweets by SpruceRacing</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
 
     <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About</h2>
-            <a href="/">Drivers & Teams</a> <a href="/">Standings</a>
-            <a href="/">Results</a> <a href="/">Regulations</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="/videos.html">Playlist</a> <a href="/videos.html">Races</a>
-            <a href="/videos.html">Practice</a> <a href="/videos.html">Highlights</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Contact</h2>
-            <a href="/">Feedback</a> <a href="/">Regulations</a>
-            <a href="/">Penalty Protest</a> <a href="/">Applications</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Socials</h2>
-            <a href="/">Website</a> <a href="https://instagram.com/spruceracing?igshid=YmMyMTA2M2Y=">Instagram</a>
-            <a href="https://youtube.com/@sprucembr">Youtube</a> <a href="https://twitter.com/SpruceRacing?s=20&t=qeqcT5vOuWGnWf9o6OE4_g">Twitter</a>
-          </div>
-        </div>
-      </div>
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="/" id="footer__logo"
-              ><img src="images/sraFooter.PNG" style="height: 32px"
-            /></a>
-          </div>
-          <p class="website__rights">© SRA 2023. All rights reserved V0.103</p>
-          <div class="social__icons">
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Safari"
-            >
-              <i class="fab fa-safari"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-    <script src="app.js"></script>
-  </body>
+    <div id="footer"></div>
+    <script src="script.js"></script>
+</body>
+
 </html>
